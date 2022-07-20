@@ -72,15 +72,3 @@ if ($contentType === "application/json-delete") {
     $result = mysqli_query($conn, $sql);
     if ($result) echo "SUCCESS";
 }
-
-// if ($contentType === "application/json-add") {
-//     $content = trim(file_get_contents("php://input"));
-//     $decoded = json_decode($content, true);
-//     // var_dump($decoded);
-//     $id = $decoded["value"]["id"];
-//     $quantity = (int)$decoded["value"]["quantity"];
-//     $sql = "UPDATE cart SET quantity = " . ($quantity + 1) . " WHERE product_id = '" . $id . "'";
-//     $result = mysqli_query($conn, $sql);
-// }
-
-// echo json_encode("Hi");
